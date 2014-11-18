@@ -1,0 +1,24 @@
+{
+  "lang": "Spanish (Mexico)",
+
+  "joinUs": {
+    "emailReq": "Por favor ingrese su dirección de correo electrónico.",
+    "successMsg": "Gracias por su solicitud para unirse a la comunidad de GlobeOne\n. Pronto le responderemos.",
+    "errorMsg": "Lo sentimos, no pudimos procesar\nsu solicitud. Por favor inténtelo de nuevo más tarde.",
+    "duplicateMsg": "Este correo electrónico ya se ha usado,\n¿desea que le enviemos de nuevo el correo electrónico de invitación?",
+    "duplicateOK": "Sí",
+    "duplicateCancel": "No"
+  },
+  "contactUs": {
+    "emailReq": "Por favor ingrese su dirección de correo electrónico.",
+    "topicReq": "Por favor seleccione un tema.",
+    "bodyReq": "Por favor ingrese una descripción.",
+    "successMsg": "Gracias por contactarnos.\nPronto le responderemos.",
+    "errorMsg": "Lo sentimos, no pudimos procesar\nsu solicitud. Por favor inténtelo de nuevo más tarde."
+  },
+  "login": {
+    "useridReq": "Por favor ingrese una dirección de correo electrónico.",
+    "passwordReq": "Por favor ingrese una clave de acceso.",
+    "invalidLogin": "Correo electrónico o clave de acceso inválida."
+  }
+}

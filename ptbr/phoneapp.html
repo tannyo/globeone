@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <title>GlobeOne | Apl. de telefonia</title>
+  <meta name="description" content="">
+  <!--#include virtual="../head.html" -->
+  <style>
+  .view label {
+    font-weight: inherit;
+    text-align: left;
+  }
+  .view .container {
+    margin: 0 auto;
+    width: 256px;
+  }
+  .view .row {
+    margin: 0 3px;
+  }
+  .view .container h1 {
+    font-size: 1.61em;
+    font-weight: 100;
+    line-height: 1.25em;
+    margin: 10px 0 20px;
+  }
+  .view .toolbar {
+    text-align: center;
+  }
+  .view .form-group {
+    margin: 1em auto;
+  }
+  .view .btn {
+    padding: 6px 0;
+    margin: 0 2px;
+    width: 80px;
+    color: #fff;
+    background-image: none;
+    text-shadow: none;
+  }
+  .view .btn-default {
+    background-color: #ccc;
+    border-color: #ccc;
+  }
+  .view .btn-primary {
+    background-color: #1369b3;
+    border-color: ##1369b3;
+  }
+  </style>
+</head>
+<body>
+  <!--#include virtual="nav.html" --> <!-- content -->
+  <div class="view">
+    <section>
+      <div class="container">
+        <div class="row">
+          <h1>Enviar dinheiro</h1>
+          <form action="#">
+            <div class="error hidden"></div>
+            <div class="form-group">
+              <label>Enviar para:</label>
+              <input id="userid" name="userid" type="email" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Transferir valor:</label>
+              <input id="amount" name="amount" type="text" placeholder="Valor" class="form-control">
+            </div>
+            <div class="form-group toolbar">
+              <button class="btn btn-default cancel" type="button">Cancelar</button>
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div> <!-- /container -->
+    </section>
+  </div>
+  <!-- content end -->
+
+  <!--#include virtual="footer.html" -->
+  <script src="/js/startup.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "lang": "Portuguese (Brazil)",
+
+  "joinUs": {
+    "emailReq": "Digite seu endereço de email.",
+    "successMsg": "Obrigado por sua solicitação de entrar na comunidade GlobeOne\n. Em breve entraremos em contato com você novamente.",
+    "errorMsg": "Infelizmente não conseguimos processar\nsua solicitação. Tente novamente mais tarde.",
+    "duplicateMsg": "Esse endereço de email já foi utilizado.\nDeseja receber novamente o email de cadastro?",
+    "duplicateOK": "Sim",
+    "duplicateCancel": "Não"
+  },
+  "contactUs": {
+    "emailReq": "Digite seu endereço de email.",
+    "topicReq": "Selecione um tópico.",
+    "bodyReq": "Insira uma descrição.",
+    "successMsg": "Obrigado por nos contatar.\nEm breve entraremos em contato com você novamente.",
+    "errorMsg": "Infelizmente não conseguimos processar\nsua solicitação. Tente novamente mais tarde."
+  },
+  "login": {
+    "useridReq": "Digite um endereço de email.",
+    "passwordReq": "Digite uma senha.",
+    "invalidLogin": "Email ou senha inválidos."
+  }
+}

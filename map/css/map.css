@@ -1,0 +1,1104 @@
+.animated_map{
+	position: relative;
+	width: 893px;
+	height: 465px;
+	background: url('../img/map.jpg') no-repeat 0 0;
+	zoom: 0.6;
+	-moz-transform :scale(0.6,0.6);
+	-moz-transform-origin: left top;
+}
+.map-point{
+	position: absolute;
+	border-radius: 100%;
+}
+.map-point{
+/**/ opacity: 0;
+
+-webkit-animation: pulsate 3.8s ease-out infinite;
+-moz-animation: pulsate 3.8s ease-out infinite;
+animation: pulsate 3.8s ease-out infinite;
+}
+.map-point-color-red{
+	background: #f77a5b;
+}
+.map-point-color-yellow{
+	background: #fed709;
+}
+.map-point-color-red01{
+	background: #ed0003;
+}
+.map-point-color-green{
+	background: #37bc10;
+}
+.map-point-color-blue{
+	background: #1488d2;
+}
+.map-point-color-blue01{
+	background: #61cede;
+}
+
+/* points */
+.map-point-reg-america1{
+	width: 9px;
+	height: 9px;
+	left: 149px;
+	top: 214px;
+	margin-left : -9px;
+}
+.map-point-reg-america2{
+	width: 4px;
+	height: 4px;
+	left: 178px;
+	top: 212px;
+}
+.map-point-reg-america3{
+	width: 8px;
+	height: 8px;
+	left: 165px;
+	top: 232px;
+}
+.map-point-reg-america4{
+	width: 9px;
+	height: 9px;
+	left: 228px;
+	top: 237px;
+}
+.map-point-reg-america5{
+	width: 6px;
+	height: 6px;
+	left: 200px;
+	top: 242px;
+}
+.map-point-reg-america6{
+	width: 5px;
+	height: 5px;
+	left: 249px;
+	top: 246px;
+}
+.map-point-reg-america7{
+	width: 8px;
+	height: 8px;
+	left: 190px;
+	top: 252px;
+}
+.map-point-reg-america8{
+	width: 7px;
+	height: 7px;
+	left: 197px;
+	top: 260px;
+}
+.map-point-reg-america9{
+	width: 4px;
+	height: 4px;
+	left: 213px;
+	top: 273px;
+}
+.map-point-reg-america10{
+	width: 4px;
+	height: 4px;
+	left: 259px;
+	top: 289px;
+}
+.map-point-reg-america11{
+	width: 7px;
+	height: 7px;
+	left: 225px;
+	top: 293px;
+}
+.map-point-reg-america12{
+	width: 4px;
+	height: 4px;
+	left: 269px;
+	top: 300px;
+}
+.map-point-reg-america13{
+	width: 4px;
+	height: 4px;
+	left: 279px;
+	top: 299px;
+}
+.map-point-reg-america14{
+	width: 4px;
+	height: 4px;
+	left: 219px;
+	top: 310px;
+}
+.map-point-reg-america15{
+	width: 26px;
+	height: 26px;
+	left: 284px;
+	top: 323px;
+}
+.map-point-reg-america16{
+	width: 7px;
+	height: 7px;
+	left: 230px;
+	top: 336px;
+}
+.map-point-reg-america17{
+	width: 4px;
+	height: 4px;
+	left: 251px;
+	top: 339px;
+}
+.map-point-reg-america18{
+	width: 5px;
+	height: 5px;
+	left: 247px;
+	top: 388px;
+}
+.map-point-reg-america19{
+	width: 8px;
+	height: 8px;
+	left: 265px;
+	top: 382px;
+}
+.map-point-reg-america20{
+	width: 4px;
+	height: 4px;
+	left: 262px;
+	top: 370px;
+}
+.map-point-reg-america21{
+	width: 24px;
+	height: 24px;
+	left: 279px;
+	top: 370px;
+}
+.map-point-reg-america22{
+	width: 14px;
+height: 14px;
+left: 262px;
+top: 306px;
+}
+.map-point-reg-america23{
+	width: 10px;
+height: 10px;
+left: 240px;
+top: 370px;
+}
+.map-point-reg-america24{
+	width: 20px;
+height: 20px;
+left: 231px;
+top: 412px;
+}
+.map-point-reg-america25{
+	width: 14px;
+height: 14px;
+left: 203px;
+top: 250px;
+}
+.map-point-reg-america26{
+	width: 24px;
+	height: 24px;
+	left: 272px;
+	top: 375px;
+}
+.map-point-reg-america27{
+	width: 14px;
+	height: 14px;
+	left: 242px;
+	top: 372px;
+}
+.map-point-reg-america28{
+	width: 14px;
+	height: 14px;
+	left: 242px;
+	top: 165px;
+}
+.map-point-reg-america29{
+	width: 24px;
+	height: 24px;
+	left: 232px;
+	top: 155px;
+}
+.map-point-reg-america30{
+	width: 14px;
+	height: 14px;
+	left: 222px;
+	top: 135px;
+}
+.map-point-reg-america31{
+	width: 24px;
+height: 24px;
+left: 111px;
+top: 174px;
+}
+.map-point-reg-america32{
+	width: 14px;
+height: 14px;
+left: 216px;
+top: 217px;
+}
+.map-point-reg-america33{
+	width: 14px;
+height: 14px;
+left: 224px;
+top: 163px;
+}
+.map-point-reg-america34{
+	width: 24px;
+height: 24px;
+left: 222px;
+top: 183px;
+}
+.map-point-reg-america35{
+	width: 24px;
+height: 24px;
+left: 228px;
+top: 188px;
+}
+.map-point-reg-america36{
+	width: 14px;
+	height: 14px;
+	left: 222px;
+	top: 135px;
+}
+.map-point-reg-america37{
+	width: 14px;
+	height: 14px;
+	left: 222px;
+	top: 135px;
+}
+.map-point-reg-america38{
+	width: 14px;
+height: 14px;
+left: 228px;
+top: 279px;
+}
+.map-point-reg-america39{
+	width: 24px;
+height: 24px;
+left: 212px;
+top: 277px;
+}
+.map-point-reg-america40{
+	width: 14px;
+height: 14px;
+left: 214px;
+top: 275px;
+}
+.map-point-reg-america41{
+	width: 14px;
+height: 14px;
+left: 224px;
+top: 272px;
+}
+.map-point-reg-america42{
+	width: 24px;
+height: 24px;
+left: 224px;
+top: 275px;
+}
+.map-point-reg-america02-1{
+	width: 24px;
+height: 24px;
+left: 253px;
+top: 341px;
+}
+.map-point-reg-america02-2{
+	width: 24px;
+height: 24px;
+left: 253px;
+top: 344px;
+}
+.map-point-reg-america02-3{
+	width: 14px;
+height: 14px;
+left: 254px;
+top: 341px;
+}
+.map-point-reg-america02-4{
+	width: 14px;
+height: 14px;
+left: 250px;
+top: 340px;
+}
+.map-point-reg-america02-5{
+	width: 14px;
+height: 14px;
+left: 243px;
+top: 340px;
+}
+.map-point-reg-america02-6{
+	width: 24px;
+height: 24px;
+left: 253px;
+top: 341px;
+}
+.map-point-reg-america02-7 {
+width: 14px;
+height: 14px;
+left: 118px;
+top: 170px;
+}
+.map-point-reg-america02-8 {
+width: 6px;
+height: 6px;
+left: 119px;
+top: 179px;
+}
+.map-point-reg-america02-9 {
+width: 14px;
+height: 14px;
+left: 141px;
+top: 170px;
+}
+.map-point-reg-america02-10 {
+width: 14px;
+height: 14px;
+left: 161px;
+top: 144px;
+}
+.map-point-reg-america02-11 {
+width: 14px;
+height: 14px;
+left: 131px;
+top: 164px;
+}
+.map-point-reg-america02-12 {
+width: 6px;
+height: 6px;
+left: 151px;
+top: 134px;
+}
+.map-point-reg-america03-1 {
+width: 6px;
+height: 6px;
+left: 262px;
+top: 324px;
+}
+.map-point-reg-america03-2 {
+width: 6px;
+height: 6px;
+left: 272px;
+top: 334px;
+}
+.map-point-reg-america03-3 {
+width: 10px;
+height: 10px;
+left: 252px;
+top: 314px;
+}
+.map-point-reg-america03-4 {
+width: 16px;
+height: 16px;
+left: 282px;
+top: 344px;
+}
+.map-point-reg-america03-5 {
+width: 16px;
+height: 16px;
+left: 279px;
+top: 328px;
+}
+.map-point-reg-america03-6 {
+width: 10px;
+height: 10px;
+left: 242px;
+top: 329px;
+}
+.map-point-reg-america03-7 {
+width: 10px;
+height: 10px;
+left: 182px;
+top: 177px;
+}
+.map-point-reg-america03-8 {
+width: 10px;
+height: 10px;
+left: 172px;
+top: 176px;
+}
+.map-point-reg-america03-9 {
+width: 7px;
+height: 7px;
+left: 192px;
+top: 187px;
+}
+.map-point-reg-america03-10 {
+width: 10px;
+height: 10px;
+left: 162px;
+top: 177px;
+}
+.map-point-reg-america03-11 {
+width: 10px;
+height: 10px;
+left: 172px;
+top: 172px;
+}
+.map-point-reg-america03-12 {
+width: 5px;
+height: 5px;
+left: 172px;
+top: 173px;
+}
+
+
+
+
+
+
+
+.map-point-reg-europe1{
+	width: 4px;
+	height: 4px;
+	left: 386px;
+	top: 171px;
+}
+.map-point-reg-europe2{
+	width: 13px;
+	height: 13px;
+	left: 391px;
+	top: 168px;
+}
+.map-point-reg-europe3{
+	width: 15px;
+	height: 15px;
+	left: 401px;
+	top: 158px;
+}
+.map-point-reg-europe4{
+	width: 11px;
+	height: 11px;
+	left: 396px;
+	top: 129px;
+}
+.map-point-reg-europe5{
+	width: 21px;
+	height: 21px;
+	left: 410px;
+	top: 129px;
+}
+.map-point-reg-europe6{
+	width: 4px;
+	height: 4px;
+	left: 416px;
+	top: 152px;
+}
+.map-point-reg-europe7{
+	width: 4px;
+	height: 4px;
+	left: 436px;
+	top: 153px;
+}
+.map-point-reg-europe8{
+	width: 11px;
+	height: 11px;
+	left: 434px;
+	top: 138px;
+}
+.map-point-reg-europe9{
+	width: 19px;
+	height: 19px;
+	left: 447px;
+	top: 142px;
+}
+.map-point-reg-europe10{
+	width: 4px;
+	height: 4px;
+	left: 466px;
+	top: 162px;
+}
+.map-point-reg-europe11{
+	width: 4px;
+	height: 4px;
+	left: 475px;
+	top: 145px;
+}
+.map-point-reg-europe12{
+	width: 10px;
+	height: 10px;
+	left: 464px;
+	top: 128px;
+}
+.map-point-reg-europe13{
+	width: 4px;
+	height: 4px;
+	left: 446px;
+	top: 133px;
+}
+.map-point-reg-europe14{
+	width: 4px;
+	height: 4px;
+	left: 425px;
+	top: 101px;
+}
+.map-point-reg-europe15{
+	width: 4px;
+	height: 4px;
+	left: 445px;
+	top: 74px;
+}
+.map-point-reg-europe16{
+	width: 4px;
+	height: 4px;
+	left: 445px;
+	top: 74px;
+}
+.map-point-reg-europe17{
+	width: 24px;
+	height: 24px;
+	left: 440px;
+	top: 70px;
+}
+.map-point-reg-europe18{
+	width: 24px;
+	height: 24px;
+	left: 435px;
+	top: 70px;
+}
+.map-point-reg-europe19{
+	width: 24px;
+	height: 24px;
+	left: 425px;
+	top: 72px;
+}
+.map-point-reg-europe20{
+	width: 14px;
+	height: 14px;
+	left: 443px;
+	top: 73px;
+}
+.map-point-reg-asia1{
+	width: 26px;
+	height: 26px;
+	left: 496px;
+	top: 102px;
+}
+.map-point-reg-asia1{
+	width: 26px;
+	height: 26px;
+	left: 496px;
+	top: 102px;
+}
+.map-point-reg-asia2{
+	width: 3px;
+	height: 3px;
+	left: 562px;
+	top: 107px;
+}
+.map-point-reg-asia3{
+	width: 3px;
+	height: 3px;
+	left: 550px;
+	top: 124px;
+}
+.map-point-reg-asia4{
+	width: 3px;
+	height: 3px;
+	left: 589px;
+	top: 141px;
+}
+.map-point-reg-asia5{
+	width: 5px;
+	height: 5px;
+	left: 634px;
+	top: 102px;
+}
+.map-point-reg-asia6{
+	width: 3px;
+	height: 3px;
+	left: 650px;
+	top: 157px;
+}
+.map-point-reg-asia7{
+	width: 23px;
+	height: 23px;
+	left: 640px;
+	top: 159px;
+}
+.map-point-reg-asia8{
+	width: 23px;
+	height: 23px;
+	left: 672px;
+	top: 159px;
+}
+.map-point-reg-asia8{
+	width: 23px;
+	height: 23px;
+	left: 750px;
+	top: 150px;
+}
+.map-point-reg-asia9{
+	width: 23px;
+	height: 23px;
+	left: 550px;
+	top: 137px;
+}
+.map-point-reg-asia10{
+	width: 23px;
+height: 23px;
+left: 575px;
+top: 167px;
+}
+.map-point-reg-asia11{
+	width: 23px;
+	height: 23px;
+	left: 510px;
+	top: 131px;
+}
+.map-point-reg-africa1{
+	width: 25px;
+	height: 25px;
+	left: 390px;
+	top: 177px;
+}
+.map-point-reg-africa2{
+	width: 25px;
+height: 25px;
+left: 402px;
+top: 251px;
+}
+.map-point-reg-africa3{
+	width: 7px;
+height: 7px;
+left: 396px;
+top: 258px;
+}
+.map-point-reg-africa4{
+	width: 10px;
+height: 10px;
+left: 377px;
+top: 255px;
+}
+.map-point-reg-africa5{
+	width: 10px;
+height: 10px;
+left: 390px;
+top: 254px;
+}
+.map-point-reg-africa6{
+	width: 20px;
+height: 20px;
+left: 515px;
+top: 254px;
+}
+.map-point-reg-africa7{
+	width: 5px;
+height: 5px;
+left: 420px;
+top: 187px;
+}
+.map-point-reg-africa8{
+	width: 10px;
+height: 10px;
+left: 490px;
+top: 217px;
+}
+.map-point-reg-africa9{
+	width: 25px;
+height: 25px;
+left: 451px;
+top: 354px;
+}
+.map-point-reg-africa10{
+	width: 10px;
+height: 10px;
+left: 440px;
+top: 194px;
+}
+.map-point-reg-africa11{
+	width: 2px;
+height: 2px;
+left: 390px;
+top: 215px;
+}
+.map-point-reg-africa12{
+	width: 10px;
+height: 10px;
+left: 390px;
+top: 209px;
+}
+.map-point-reg-africa13{
+	width: 6px;
+height: 6px;
+left: 405px;
+top: 220px;
+}
+.map-point-reg-africa14{
+	width: 10px;
+height: 10px;
+left: 505px;
+top: 226px;
+}
+.map-point-reg-africa15{
+	width: 10px;
+	height: 10px;
+	left: 400px;
+	top: 250px;
+}
+.map-point-reg-africa16{
+	width: 6px;
+height: 6px;
+left: 415px;
+top: 250px;
+}
+.map-point-reg-africa17{
+	width: 5px;
+height: 5px;
+left: 505px;
+top: 250px;
+}
+.map-point-reg-africa18{
+	width: 15px;
+height: 15px;
+left: 406px;
+top: 250px;
+}
+.map-point-reg-africa19{
+	width: 5px;
+height: 5px;
+left: 500px;
+top: 253px;
+}
+.map-point-reg-africa20{
+	width: 5px;
+height: 5px;
+left: 510px;
+top: 243px;
+}
+.map-point-reg-africa21{
+	width: 5px;
+height: 5px;
+left: 460px;
+top: 327px;
+}
+.map-point-reg-africa22{
+	width: 7px;
+height: 7px;
+left: 460px;
+top: 360px;
+}
+.map-point-reg-africa23{
+	width: 15px;
+height: 15px;
+left: 480px;
+top: 337px;
+}
+.map-point-reg-africa24{
+	width: 4px;
+height: 4px;
+left: 488px;
+top: 300px;
+}
+.map-point-reg-africa25{
+	width: 6px;
+height: 6px;
+left: 450px;
+top: 317px;
+}
+.map-point-reg-africa26{
+	width: 5px;
+height: 5px;
+left: 440px;
+top: 307px;
+}
+.map-point-reg-africa27{
+	width: 6px;
+height: 6px;
+left: 489px;
+top: 279px;
+}
+.map-point-reg-africa28{
+	width: 5px;
+height: 5px;
+left: 460px;
+top: 357px;
+}
+.map-point-reg-africa29{
+	width: 10px;
+height: 10px;
+left: 477px;
+top: 245px;
+}
+.map-point-reg-africa30{
+	width: 4px;
+height: 4px;
+left: 526px;
+top: 317px;
+}
+.map-point-reg-africa31 {
+width: 24px;
+height: 24px;
+left: 515px;
+top: 323px;
+}
+.map-point-reg-africa32{
+width: 24px;
+height: 24px;
+left: 477px;
+top: 317px;
+}
+.map-point-reg-africa33{
+width: 24px;
+height: 24px;
+left: 435px;
+top: 331px;
+}
+.map-point-reg-africa34{
+width: 24px;
+height: 24px;
+left: 445px;
+top: 327px;
+}
+.map-point-reg-africa35{
+width: 24px;
+height: 24px;
+left: 465px;
+top: 334px;
+}
+.map-point-reg-asia-a1{
+	width: 10px;
+	height: 10px;
+	left: 526px;
+	top: 234px;
+}
+.map-point-reg-asia-a1{
+	width: 10px;
+	height: 10px;
+	left: 526px;
+	top: 234px;
+}
+.map-point-reg-asia-a1{
+	width: 10px;
+	height: 10px;
+	left: 526px;
+	top: 234px;
+}
+.map-point-reg-asia-a2{
+	width: 5px;
+height: 5px;
+left: 526px;
+top: 203px;
+}
+.map-point-reg-asia-a3{
+	width: 20px;
+height: 20px;
+left: 535px;
+top: 222px;
+}
+.map-point-reg-asia-a4{
+	width: 5px;
+height: 5px;
+left: 533px;
+top: 222px;
+}
+.map-point-reg-asia-a5{
+	width: 25px;
+height: 25px;
+left: 504px;
+top: 203px;
+}
+.map-point-reg-asia-a6{
+	width: 10px;
+height: 10px;
+left: 510px;
+top: 178px;
+}
+.map-point-reg-asia-a7{
+	width: 5px;
+height: 5px;
+left: 559px;
+top: 188px;
+}
+.map-point-reg-asia-a8{
+	width: 7px;
+height: 7px;
+left: 564px;
+top: 198px;
+}
+.map-point-reg-asia-a9{
+	width: 5px;
+height: 5px;
+left: 540px;
+top: 188px;
+}
+.map-point-reg-asia-a10{
+	width: 3px;
+height: 3px;
+left: 549px;
+top: 201px;
+}
+.map-point-reg-asia-a11{
+	width: 5px;
+height: 5px;
+left: 559px;
+top: 189px;
+}
+.map-point-reg-asia-a12{
+	width: 5px;
+height: 5px;
+left: 559px;
+top: 199px;
+}
+.map-point-reg-asia-b1{
+	width: 5px;
+height: 5px;
+left: 620px;
+top: 199px;
+}
+.map-point-reg-asia-b2{
+	width: 10px;
+height: 10px;
+left: 599px;
+top: 210px;
+}
+.map-point-reg-asia-b3{
+	width: 15px;
+height: 15px;
+left: 620px;
+top: 215px;
+}
+.map-point-reg-asia-b4{
+	width: 25px;
+height: 25px;
+left: 591px;
+top: 226px;
+}
+.map-point-reg-asia-b5{
+	width: 5px;
+height: 5px;
+left: 639px;
+top: 182px;
+}
+.map-point-reg-asia-b6{
+	width: 5px;
+height: 5px;
+left: 650px;
+top: 208px;
+}
+.map-point-reg-asia-b7 {
+width: 3px;
+height: 3px;
+left: 682px;
+top: 203px;
+}
+.map-point-reg-asia-b8 {
+width: 4px;
+height: 4px;
+left: 668px;
+top: 235px;
+}
+.map-point-reg-asia-b9 {
+width: 3px;
+height: 3px;
+left: 659px;
+top: 241px;
+}
+.map-point-reg-asia-b10 {
+width: 5px;
+height: 5px;
+left: 714px;
+top: 211px;
+}
+.map-point-reg-asia-b11 {
+width: 25px;
+height: 25px;
+left: 672px;
+top: 208px;
+}
+.map-point-reg-asia-b12 {
+width: 10px;
+height: 10px;
+left: 656px;
+top: 190px;
+}
+.map-point-reg-asia-b13 {
+width: 5px;
+height: 5px;
+left: 665px;
+top: 199px;
+}
+.map-point-reg-asia-b14 {
+width: 5px;
+height: 5px;
+left: 665px;
+top: 262px;
+}
+.map-point-reg-asia-b15 {
+width: 5px;
+height: 5px;
+left: 665px;
+top: 199px;
+}
+.map-point-reg-asia-b16 {
+width: 5px;
+height: 5px;
+left: 709px;
+top: 188px;
+}
+.map-point-reg-asia-b17 {
+width: 5px;
+height: 5px;
+left: 681px;
+top: 239px;
+}
+.map-point-reg-asia-b18 {
+width: 5px;
+height: 5px;
+left: 694px;
+top: 185px;
+}
+.map-point-reg-asia-b19 {
+width: 5px;
+height: 5px;
+left: 698px;
+top: 214px;
+}
+.map-point-reg-australia1{
+width: 5px;
+height: 5px;
+left: 698px;
+top: 305px;
+}
+.map-point-reg-australia2{
+width: 5px;
+height: 5px;
+left: 797px;
+top: 315px;
+}
+.map-point-reg-australia3 {
+width: 5px;
+height: 5px;
+left: 752px;
+top: 377px;
+}
+.map-point-reg-australia4{
+width: 20px;
+height: 20px;
+left: 764px;
+top: 328px;
+}
+.map-point-reg-australia5 {
+width: 25px;
+height: 25px;
+left: 794px;
+top: 373px;
+}
+.map-point-reg-australia6 {
+width: 3px;
+height: 3px;
+left: 788px;
+top: 377px;
+}
+.map-point-reg-australia7 {
+width: 5px;
+height: 5px;
+left: 794px;
+top: 373px;
+}
+.map-point-reg-australia8 {
+width: 25px;
+height: 25px;
+left: 784px;
+top: 376px;
+}
+.map-point-reg-australia9 {
+width: 25px;
+height: 25px;
+left: 774px;
+top: 370px;
+}

@@ -1,0 +1,24 @@
+{
+  "lang": "Chinese",
+
+  "joinUs": {
+    "emailReq": "请输入您的电子邮件地址。",
+    "successMsg": "谢谢您申请加入 GlobeOne\n社区。我们会马上回复您。",
+    "errorMsg": "抱歉，我们无法\n处理您的申请。请稍后再试。",
+    "duplicateMsg": "该电子邮件地址已被使用，\n是否要我们重新发送“加入我们”电子邮件？",
+    "duplicateOK": "是",
+    "duplicateCancel": "否"
+  },
+  "contactUs": {
+    "emailReq": "请输入您的电子邮件地址。",
+    "topicReq": "请选择主题。",
+    "bodyReq": "请输入说明。",
+    "successMsg": "谢谢您联系我们。\n我们会马上回复您。",
+    "errorMsg": "抱歉，我们无法\n处理您的申请。请稍后再试。"
+  },
+  "login": {
+    "useridReq": "请输入电子邮件地址。",
+    "passwordReq": "请输入密码。",
+    "invalidLogin": "电子邮件地址或密码无效。"
+  }
+}
