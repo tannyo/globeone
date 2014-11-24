@@ -199,6 +199,10 @@ h3 {
   font-size:  14%;
   letter-spacing: normal;
 }
+.legal {
+  font-size: .6em;
+  letter-spacing: normal;
+}
 
 footer {
   border-top: 1px solid #ccc;
