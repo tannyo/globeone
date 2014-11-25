@@ -1,127 +1,51 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta content="width=device-width" name="viewport">
-	<meta content="yes" name="apple-mobile-web-app-capable">
-	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/demo.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/paymentInfo.css">
-	<link rel="shortcut icon" href="assets/favicon.ico">
-	<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-	<title>Payment Info</title>
-	<style>
-	.credit-card-fields label {
-		display: block;
-		margin-top: 1.5em;
-	}
-	#cardExpirationMonth, #cardExpirationYear {
-		width: 2em;
-		text-align: center;
-	}
-	</style>
+  <title>Credit Card Information</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/cc.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script src="js/creditcard.js"></script>
+  <script src="js/cc.js"></script>
+  <script>
+  </script>
 </head>
 <body>
-	<!-- <section>
-		<form>
-			<fieldset class="credit-card-group">
-				<legend>Credit Card Information</legend>
-				<label for="card-number">Credit Card Number</label>
-				<input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="card-number" id="card-number">
-				<label for="card-number">Expiration Date</label>
-				<input placeholder="MM/YY" pattern="[0-9]*" type="text" class="card-expiration" id="card-expiration">
-				<label for="card-number">CVV Number</label>
-				<input placeholder="CVV" pattern="[0-9]*" type="text" class="card-cvv" id="card-cvv">
-				<label for="card-number">Billing Zip Code</label>
-				<input placeholder="ZIP" pattern="[0-9]*" type="text" class="card-zip" id="card-zip">
-			</fieldset>
-		</form>
-	</section> -->
-	<section>
-		<form novalidate>
-			<fieldset class="credit-card-fields">
-				<legend>Credit Card Information</legend>
-				<label>Credit Card Number</label>
-				<span class="card-image"></span> <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="tel" name="cardNumber" id="cardNumber" placeholder="CC number">
-				<label>Expiration Date</label>
-				<input id="cardExpirationMonth" name="cardExpirationMonth" pattern="[0-9]*" type="tel" placeholder="MM" maxlength="2">/<input id="cardExpirationYear" name="cardExpirationYear" pattern="[0-9]*" type="tel" placeholder="YY" maxlength="2">
-				<!-- <select id="cardExpirationMonth" name="cardExpirationMonth">
-					<option value="01">01</option>
-					<option value="02">02</option>
-					<option value="02">03</option>
-					<option value="02">04</option>
-					<option value="02">05</option>
-					<option value="02">06</option>
-					<option value="02">07</option>
-					<option value="02">08</option>
-					<option value="02">09</option>
-					<option value="11">10</option>
-					<option value="11">11</option>
-					<option value="12">12</option>
-				</select>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Credit Card Information</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <form action="#" id="cc-form" novalidate>
+          <div class="error hidden"></div>
 
-				<select id="cardExpirationYear" name="cardExpirationYear">
-					<option value="2014">2014</option>
-					<option value="2015">2015</option>
-					<option value="2015">2016</option>
-					<option value="2015">2017</option>
-					<option value="2015">2018</option>
-					<option value="2015">2019</option>
-					<option value="2024">2020</option>
-					<option value="2024">2021</option>
-					<option value="2024">2022</option>
-					<option value="2024">2023</option>
-					<option value="2024">2024</option>
-					<option value="2025">2025</option>
-				</select> -->
-				<label for="cardName">Name on Card</label>
-				<input type="text" id="cardName" name="cardName" placeholder="Name">
-			</fieldset>
-		</form>
-	</section>
-	<script src="assets/scripts/libs/modernizr.js"></script>
-	<!-- // <script src="assets/scripts/libs/jquery.js"></script> -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="assets/scripts/libs/jquery.inputmask.js"></script>
-	<script src="assets/scripts/libs/jquery.inputmask.date.extensions.js"></script>
-	<script src="assets/scripts/app.js"></script>
-	<script>
-	$(document).ready(function () {
-		var cardImage = $(".credit-card-fields").find(".card-image"),
-			// Credit card regex patterns.
-			ccDefinitions = {
-				'visa': /^4/,
-				'mc': /^5[1-5]/,
-				'amex': /^3(4|7)/,
-				'disc': /^6011/
-			};
-
-		function getCreditCardType(number) {
-			var ccType;
-
-			$.each(ccDefinitions, function (i, v) {
-				if (v.test(number)) {
-					ccType = i;
-					return false;
-				}
-			});
-
-			return ccType;
-		}
-
-		$("#cardNumber").on("change blur keyup keypress keydown", function () {
-			var val = $(this).val(),
-				ccType = getCreditCardType(val);
-
-			console.log("on: %s", ccType);
-			if (ccType) {
-				cardImage.removeClass().addClass("card-image " + ccType);
-				console.log(cardImage.attr("class"));
-			} else {
-				cardImage.removeClass().addClass("card-image");
-			}
-		});
-	});
-	</script>
+          <fieldset class="form-group credit-card-fields">
+            <legend><label>Credit Card Number</label></legend>
+            <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="tel" name="cardNumber" id="cardNumber" placeholder="CC number" class="form-control" required autofocus>
+          </fieldset>
+          <fieldset class="form-group">
+            <legend><label for="cardExpirationMonth">Expiration Date</label></legend>
+            <input id="cardExpirationMonth" name="cardExpirationMonth" pattern="[0-9]*" type="tel" placeholder="MM" maxlength="2" class="form-control" required>/<input id="cardExpirationYear" name="cardExpirationYear" pattern="[0-9]*" type="tel" placeholder="YY" maxlength="2" class="form-control" required>
+          </fieldset>
+          <fieldset class="form-group">
+            <legend><label for="cardName">Name on Card</label></legend>
+            <input type="text" id="cardName" name="cardName" placeholder="Name" class="form-control" required>
+          </fieldset>
+          <fieldset class="form-group">
+            <legend><label for="cvv2">CVV</label></legend>
+            <input placeholder="123" pattern="[0-9]*" type="tel" name="cvv2" id="cvv2" maxlength="3" class="form-control" required>
+          </fieldset>
+          <p><button type="submit" id="sig_submit" class="btn btn-primary">Fund Account</button></p>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
