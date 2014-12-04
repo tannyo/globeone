@@ -28,7 +28,7 @@ var lang = {
 };
 
 // Get language file for dialogs if in a subfolder.
-if (location.pathname.split('/').length > 2) {
+if (location.pathname.split('/').length > 2 && location.pathname.toLowerCase() !== '/downloads/' && !(/press\-releases/i.test(location.href))) {
   console.log("get lang file");
   $.ajax("lang/lang.json").done(function (data) {
     console.log(JSON.stringify(data));
@@ -37,6 +37,10 @@ if (location.pathname.split('/').length > 2) {
     console.log("Error getting language file", name, "error:", status);
   });
 }
+
+var track_event = function(category, action, label) {
+  ga('send', 'event', category, action, label);
+};
 
 /*
  * jQuery modal dialog plugin.
@@ -472,6 +476,7 @@ var contact_us = (function () {
     function done(data) {
       if (data.status === "OK") {
         $.dialog.alert(lang.contactUs.successMsg).autoClose(7000);
+        track_event("Contact Us", "sent", email.subject);
       } else {
         $.dialog.alert(lang.contactUs.errorMsg).autoClose(7000);
       }
@@ -678,6 +683,9 @@ var join_us = (function () {
     function done(data) {
       if (data.status === "OK") {
         $.dialog.alert(lang.joinUs.successMsg).autoClose(7000);
+        if (!resend) {
+          track_event("Join Us", "join");
+        }
       } else if (data.data.status_code === "0001") {
         $.dialog.confirm(lang.joinUs.duplicateMsg, {ok: lang.joinUs.duplicateOK, cancel: lang.joinUs.duplicateCancel}).onClose(function (response) {
           if (response) {
