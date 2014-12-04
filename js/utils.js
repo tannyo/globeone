@@ -837,6 +837,13 @@ $(document).ready(function () {
       $(".scroll-indicator").removeClass("scroll-indicator");
     }
 
+    // Track social link clicks.
+    function track_social_links() {
+      $("#social-menu, footer .list-unstyled:last").find("a").on("click", function () {
+        track_event("social", this.text.trim(), this.href);
+      });
+    }
+
     // Add floating social media menu to page.
     function add_social_menu() {
       // Fix intermittent problem with some older Chrome browsers where it loads fonts,
@@ -880,6 +887,7 @@ $(document).ready(function () {
     join_us.init();
     contact_us.init();
     add_social_menu();
+    track_social_links();
 
     faqs();
 

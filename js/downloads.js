@@ -11,5 +11,5 @@ $("#sec-download-files").find("a").on("click", function(event) {
   } else {
     file_type = this.href.substr(this.href.lastIndexOf(".") + 1).toLowerCase();
   }
-  track_event("downloads", file_type, this.text);
+  track_event("downloads", this.text, file_type);
 });
