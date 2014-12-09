@@ -915,6 +915,12 @@ $(document).ready(function () {
     } else {
       country_menu.init();
     }
+
+    // Add map iframe.
+    var map_el = $(".map");
+    if (map_el.css("display") === "block") {
+      map_el.append('<iframe src="/map/html/map.html" scrolling="no"></iframe>');
+    }
   }
 
   startup();

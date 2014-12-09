@@ -791,8 +791,7 @@ section .btn-primary:hover {
 }
 /* do not display the map on a phone. */
 #sec-how-savings .map {
-  position: absolute;
-  left: -1000px;
+  display: none;
 }
 
 /* do not display on phone */
@@ -801,6 +800,7 @@ section .btn-primary:hover {
     background-position: 50%;
   }
   #sec-how-savings .map {
+    display: block;
     position: relative;
     left: 0;
     height: 284px;
