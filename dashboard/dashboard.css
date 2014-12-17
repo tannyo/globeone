@@ -1,0 +1,375 @@
+body {
+  color: #777;
+  font-family: "Neue Helvetica W01", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* This is where the logo goes. */
+.navbar-brand {
+  height: 70px;
+  padding: 10px 15px;
+}
+
+#logo {
+  width: 145px;
+  margin-top: 8px;
+}
+/* Make room for the Sign In button for languages where Sign In is wider. */
+.logo-sm #logo {
+  width: 102px;
+  margin-top: 13px;
+}
+/* Make the logo larger for larger devices. */
+@media (min-width: 768px) {
+  #logo, .logo-sm #logo {
+    height: 50px;
+    width: auto;
+    margin-top: 0;
+  }
+}
+
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  box-shadow: none;
+  height: 70px;
+}
+
+/* mobile (hamburger) toggle button */
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  margin: 16px 0 0;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+.navbar-toggle .icon-bar {
+  width: 29px;
+  height: 3px;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 5px;
+}
+
+/* Mobile sign in button. */
+.navbar-header .login {
+  display: block;
+  float: right;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 8px 16px;
+  margin: 16px 8px 0 0;
+  color: #777;
+  text-transform: uppercase;
+}
+
+/* mobile dropdown menu */
+.navbar-collapse.in {
+  background-color: #fff;
+  border-width: 0;
+  border-bottom: 1px solid #ccc;
+  box-shadow: none;
+}
+/* down arrow at bottom of menu when country is clicked */
+/*nav .scroll-indicator:after {
+  content: "";
+  left: 50%;
+  height: 0;
+  width: 0;
+  position: relative;
+  margin: -15px 0 0 -10px;
+  border: 10px solid transparent;
+  border-top-color: #007dc5;
+}*/
+nav .scroll-indicator:after {
+  content: "\e604";
+  font-family: icons;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  width: 100%;
+  height: 1em;
+  margin-top: -1.2em;
+  text-align: center;
+  color: #007dc5;
+  position: relative;
+}
+/* Navigation text styles */
+.navbar li {
+  text-transform: uppercase;
+}
+
+/* Highlight the currently selected page. */
+.why .navbar .why,
+.who .navbar .who,
+.how .navbar .how,
+.employers .navbar .employers {
+  color: #007dc5;
+}
+
+.navbar a.disabled {
+  opacity: 0.35;
+}
+
+.navbar .country span, .navbar .country-menu span.country-text {
+  padding-left: 28px;
+  background-image: url('../img/sprite-country-flags.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.navbar .country-menu span.lang-text {
+  text-transform: none;
+}
+
+/* Overwrite dropdown-menu bootstrap styles */
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+  background-color: transparent;
+}
+.open .dropdown-menu {
+  top: 68px;
+  border-width: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav>li>a {
+    padding-top: 24.5px;
+    padding-bottom: 24.5px;
+  }
+  .navbar .login {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding-top: 4.5px;
+    padding-bottom: 4.5px;
+    margin-top: 19px;
+  }
+  .navbar-header .login {
+    display: none;
+  }
+  .navbar .country span {
+    padding: 0;
+    text-indent:  100%;
+    overflow: hidden;
+    width: 22px;
+    height: 20px;
+  }
+  nav .scroll-indicator:after {
+    display: none;
+  }
+}
+
+h1 {
+  font-size: 1.6em;
+  font-weight: 100;
+  line-height: 1.25em;
+  margin: 0.65em 0 0.945em;
+}
+
+h2, h3 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 100;
+  line-height: 1;
+  margin-bottom: 0.2em;
+}
+h3 {
+  font-size: 1.25em;
+  margin-top: 1.45em;
+}
+
+.win h1, .win h2, .win h3 {
+  font-weight: 200;
+}
+
+.pat-pend {
+  font-size:  14%;
+  letter-spacing: normal;
+}
+.legal {
+  font-size: .6em;
+  letter-spacing: normal;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  padding: 2.85714em 0 10px;
+}
+footer h2 {
+  font-weight: 500;
+  color: #777;
+}
+footer h2 span {
+  font-weight: 300;
+}
+
+footer ul {
+  margin-bottom: 1.428em;
+}
+footer li {
+  margin: 0.714em 0;
+}
+footer a {
+  color: #999;
+}
+footer a:hover, footer a:focus {
+  color: #555;
+  text-decoration: none;
+}
+footer .icon {
+  padding-left: 1.5em;
+  position: relative;
+}
+footer .icon span {
+  font-size: 1.4em;
+  position: absolute;
+  top: -3px;
+  left: 0;
+}
+.icon-twitter-square {
+  color: #39a9e0;
+  color: #55acee;
+}
+.icon-facebook-square {
+  color: #3b5998;
+}
+.icon-google-plus-square {
+  color: #dd4b39;
+}
+.icon-linkedin {
+  color: #007bb6;
+}
+.icon-blog-icon-box-rev {
+  color: #f97e04;
+}
+.icon-wordpress {
+  color: #464646;
+}
+footer .icon .icon-wordpress {
+  font-size: 1.2em;
+  top: -2px;
+}
+
+footer .logo {
+  height: 65px;
+  display: block;
+  margin: 0 auto 10px;
+}
+footer .copyright {
+  color: #999;
+}
+
+/* do not display on phone */
+#social-menu {
+  display: none;
+}
+@media (min-width: 768px) {
+  #social-menu {
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    top: 25%;
+    right: 0;
+    width: 40px;
+    height: 250px;
+    padding-left: 0.15em;
+    font-size: 2.5em;
+  }
+  #social-menu li {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  #social-menu a:after {
+    content: "";
+    background-color: #fff;
+    /*opacity: .75;*/
+    width: 25px;
+    height: 28px;
+    position: absolute;
+    left: 7px;
+    margin-top: 10px;
+    border-radius: 5px;
+    /*z-index: -1;*/
+  }
+  #social-menu a {
+    color: transparent;
+  }
+  #social-menu a:hover {
+    text-decoration: none;
+    text-shadow: 1px 1px 0px #000;
+  }
+  #social-menu span {
+    position: relative;
+    z-index: 1;
+  }
+  #social-menu .icon-wordpress {
+    font-size: 0.85em;
+  }
+}
+
+/* This is the content container. */
+.view {
+  /*margin-top: 70px;*/
+}
+
+img.shadow {
+  box-shadow: 0 0 15px rgba(0,0,0,0.35);
+}
+img.pull-right {
+  margin: 0 0 0.75em 1em;
+}
+/* The blocker goes behind any dialogs or popups. */
+.blocker {
+  display: none;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(51,51,51, 0.6);
+  z-index: 1040;
+}
+
+.view {
+  font-size: 18px;
+  font-weight: 300;
+  min-height: 430px;
+  padding-bottom: 1.42857em;
+}
+.view h1 {
+  font-size: 2.42em;
+  margin: 1.168em auto 0.584em;
+}
+.view h2 {
+  color: #007dc5;
+}
+.view p {
+  margin: 0 0 1.428em;
+}
+.view strong {
+  font-weight: 400;
+}
+.view.desc {
+  padding-top: 1.428em;
+}
+.view ul {
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .view {
+    font-size: 20px;
+  }
+  .view h1 {
+    font-size: 3.35em;
+    margin: 0.854em auto 0.427em;
+  }
+  .view ul, .view ol {
+    margin: 1.428em 0 1.428em 1em;
+  }
+}
