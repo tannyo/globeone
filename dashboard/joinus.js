@@ -29,6 +29,8 @@
     $(".bar-legend")
       .find("li:first").append(" (" + req.member_total + ")").end()
       .find("li:last").append(" (" + req.employer_total + ")");
+
+    $("#last-refresh").find("span").text((new Date()).toLocaleString());
   }
 
   function done(data) {
@@ -130,6 +132,4 @@
   setInterval(function () {
     location.reload();
   }, 1000 * 60 * 60);
-
-  $("#last-refresh").append((new Date()).toLocaleString());
 }());
