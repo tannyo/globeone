@@ -173,7 +173,8 @@ var cookie = (function () {
       "ptbr": true,
       "zhcn": true,
       "hiin": true,
-      "vivn": true
+      "vivn": true,
+      "filph": true
     };
 
   // console.log("langFolder:", langFolder, "\nlangCode:", langCode, "\nsavedLangCode:", savedLangCode, "\npage:", page);

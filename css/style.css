@@ -495,6 +495,9 @@ section .join-us-form input {
   width: 69%;
   display: inline-block;
 }
+section .join-us-form.filph input {
+  width: 52.2%;
+}
 section .join-us-form.ptbr input {
   width: 54%;
 }
@@ -846,20 +849,23 @@ section .btn-primary:hover {
     background: url('../img/bg-phone-xfer.png') 2% 95px no-repeat;
     min-height: 430px;
   }
-  #sec-how-money-xfer.ptbr .row {
-    background: url('../ptbr/img/bg-phone-xfer.png') 2% 95px no-repeat;
-  }
   #sec-how-money-xfer.esmx .row {
     background: url('../esmx/img/bg-phone-xfer.png') 2% 95px no-repeat;
-  }
-  #sec-how-money-xfer.zhcn .row {
-    background: url('../zhcn/img/bg-phone-xfer.png') 2% 95px no-repeat;
   }
   #sec-how-money-xfer.hiin .row {
     background: url('../hiin/img/bg-phone-xfer.png') 2% 95px no-repeat;
   }
+  #sec-how-money-xfer.filph .row {
+    background: url('../filph/img/bg-phone-xfer.png') 2% 95px no-repeat;
+  }
+  #sec-how-money-xfer.ptbr .row {
+    background: url('../ptbr/img/bg-phone-xfer.png') 2% 95px no-repeat;
+  }
   #sec-how-money-xfer.vivn .row {
     background: url('../vivn/img/bg-phone-xfer.png') 2% 95px no-repeat;
+  }
+  #sec-how-money-xfer.zhcn .row {
+    background: url('../zhcn/img/bg-phone-xfer.png') 2% 95px no-repeat;
   }
   #sec-how-money-xfer .row > div {
     float: right;
@@ -1126,11 +1132,11 @@ section .btn-primary:hover {
 .unitedstates {
   background-position: 0 -385px;
 }
-.brazil {
-  background-position: 0 -5495px;
-}
 .mexico {
   background-position: 0 -2415px;
+}
+.brazil {
+  background-position: 0 -5495px;
 }
 .china {
   background-position: 0 -5145px;
@@ -1143,9 +1149,6 @@ section .btn-primary:hover {
 }
 .spain {
   background-position: 0 -4620px;
-}
-.india {
-  background-position: 0 -3675px;
 }
 .vietnam {
   background-position: 0 -176px;

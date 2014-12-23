@@ -1,0 +1,24 @@
+{
+  "lang": "Filipino",
+
+  "joinUs": {
+    "emailReq": "Mangyaring ilagay ang iyong email address.",
+    "successMsg": "Salamat sa iyong kahilingang Sumali sa komunidad ng GlobeOne.\nSasagot kami sa iyo sa lalong madaling panahon.",
+    "errorMsg": "Paumanhin, hindi namin nagawang iproseso ang iyong kahilingan.\nMangyaring subukan muli sa ibang pagkakataon.",
+    "duplicateMsg": "Nagamit na ang email address, gusto mo bang ipadala\nnaming muli ang email na Sumali Sa Amin?",
+    "duplicateOK": "Oo",
+    "duplicateCancel": "Hindi"
+  },
+  "contactUs": {
+    "emailReq": "Mangyaring ilagay ang iyong email address.",
+    "topicReq": "Mangyaring pumili ng isang paksa.",
+    "bodyReq": "Mangyaring maglagay ng paglalarawan.",
+    "successMsg": "Salamat sa pakikipag-ugnayan sa amin. Sasagot\nkami sa iyo sa lalong madaling panahon.",
+    "errorMsg": "Paumanhin, hindi namin nagawang iproseso ang iyong kahilingan.\nMangyaring subukan muli sa ibang pagkakataon."
+  },
+  "login": {
+    "useridReq": "Mangyaring maglagay ng isang email address.",
+    "passwordReq": "Mangyaring maglagay ng password.",
+    "invalidLogin": "Hindi wastong email o password."
+  }
+}
