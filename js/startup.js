@@ -170,11 +170,12 @@ var cookie = (function () {
     supportedLangCodes = {
       "enus": true,
       "esmx": true,
-      "ptbr": true,
-      "zhcn": true,
+      "filph": true,
       "hiin": true,
+      "idid": true,
+      "ptbr": true,
       "vivn": true,
-      "filph": true
+      "zhcn": true
     };
 
   // console.log("langFolder:", langFolder, "\nlangCode:", langCode, "\nsavedLangCode:", savedLangCode, "\npage:", page);

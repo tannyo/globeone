@@ -495,22 +495,22 @@ section .join-us-form input {
   width: 69%;
   display: inline-block;
 }
-section .join-us-form.filph input {
-  width: 52.2%;
-}
-section .join-us-form.ptbr input {
-  width: 54%;
-}
 section .join-us-form.esmx input {
   width: 47.8%;
+}
+section .join-us-form.filph input {
+  width: 52.2%;
 }
 section .join-us-form.hiin input {
   width: 68%;
 }
-section .join-us-form.vivn {
+section .join-us-form.ptbr input {
+  width: 54%;
+}
+section .join-us-form.idid, section .join-us-form.vivn {
   text-align: center;
 }
-section .join-us-form.vivn input {
+section .join-us-form.idid input, section .join-us-form.vivn input {
   width: 75%;
   display: block;
   margin: 0 auto 1em;
@@ -520,10 +520,10 @@ section .join-us-form button, section .btn-primary {
   border-color: #1369b3;
 }
 @media (min-width: 768px) {
-  section .join-us-form.vivn {
+  section .join-us-form.idid, section .join-us-form.vivn {
     max-width: 500px;
   }
-  section .join-us-form.vivn input {
+  section .join-us-form.idid input, section .join-us-form.vivn input {
     width: 45.5%;
     display: inline;
     margin: 0;
@@ -852,11 +852,14 @@ section .btn-primary:hover {
   #sec-how-money-xfer.esmx .row {
     background: url('../esmx/img/bg-phone-xfer.png') 2% 95px no-repeat;
   }
+  #sec-how-money-xfer.filph .row {
+    background: url('../filph/img/bg-phone-xfer.png') 2% 95px no-repeat;
+  }
   #sec-how-money-xfer.hiin .row {
     background: url('../hiin/img/bg-phone-xfer.png') 2% 95px no-repeat;
   }
-  #sec-how-money-xfer.filph .row {
-    background: url('../filph/img/bg-phone-xfer.png') 2% 95px no-repeat;
+  #sec-how-money-xfer.idid .row {
+    background: url('../idid/img/bg-phone-xfer.png') 2% 95px no-repeat;
   }
   #sec-how-money-xfer.ptbr .row {
     background: url('../ptbr/img/bg-phone-xfer.png') 2% 95px no-repeat;
@@ -1143,6 +1146,9 @@ section .btn-primary:hover {
 }
 .india {
   background-position: 0 -3675px;
+}
+.indonesia {
+  background-position: 0 -3781px;
 }
 .philipines {
   background-position: 0 -1750px;

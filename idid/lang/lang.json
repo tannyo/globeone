@@ -1,0 +1,24 @@
+{
+  "lang": "Bahasa Indonesia",
+
+  "joinUs": {
+    "emailReq": "Masukkan alamat email Anda.",
+    "successMsg": "Terima kasih atas permintaan Anda untuk Bergabung dengan komunitas\nGlobeOne. Kami akan segera menghubungi Anda.",
+    "errorMsg": "Maaf, kami tidak bisa memproses permintaan Anda.\nCoba lagi nanti.",
+    "duplicateMsg": "Alamat email ini sudah digunakan, Anda ingin kami mengirimkan\nulang email undangan Bergabunglah dengan Kami?",
+    "duplicateOK": "Ya",
+    "duplicateCancel": "Tidak"
+  },
+  "contactUs": {
+    "emailReq": "Masukkan alamat email Anda.",
+    "topicReq": "Pilih topik.",
+    "bodyReq": "Masukkan deskripsi.",
+    "successMsg": "Terima kasih sudah menghubungi kami.\nKami akan segera menghubungi Anda.",
+    "errorMsg": "Maaf, kami tidak bisa memproses permintaan Anda.\nCoba lagi nanti."
+  },
+  "login": {
+    "useridReq": "Masukkan alamat email.",
+    "passwordReq": "Masukkan kata sandi.",
+    "invalidLogin": "Email atau kata sandi tidak valid."
+  }
+}
