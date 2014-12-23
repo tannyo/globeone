@@ -504,10 +504,29 @@ section .join-us-form.esmx input {
 section .join-us-form.hiin input {
   width: 68%;
 }
+section .join-us-form.vivn {
+  text-align: center;
+}
+section .join-us-form.vivn input {
+  width: 75%;
+  display: block;
+  margin: 0 auto 1em;
+}
 section .join-us-form button, section .btn-primary {
   background-color: #1369b3;
   border-color: #1369b3;
 }
+@media (min-width: 768px) {
+  section .join-us-form.vivn {
+    max-width: 500px;
+  }
+  section .join-us-form.vivn input {
+    width: 45.5%;
+    display: inline;
+    margin: 0;
+  }
+}
+
 section .btn-primary:hover {
   background-color: #115fab;
   border-color: #115fab;
@@ -839,6 +858,9 @@ section .btn-primary:hover {
   #sec-how-money-xfer.hiin .row {
     background: url('../hiin/img/bg-phone-xfer.png') 2% 95px no-repeat;
   }
+  #sec-how-money-xfer.vivn .row {
+    background: url('../vivn/img/bg-phone-xfer.png') 2% 95px no-repeat;
+  }
   #sec-how-money-xfer .row > div {
     float: right;
   }
@@ -904,7 +926,8 @@ section .btn-primary:hover {
 }
 
 #sec-pressroom {
-  background-image: url('../img/bg-to-the-beach.jpg');
+  /*background-image: url('../img/bg-to-the-beach.jpg');*/
+  background-image: url('../img/bg-pressroom.jpg');
 }
 #sec-downloads {
   background-image: url('../img/bg-downloads.jpg');
@@ -1123,6 +1146,9 @@ section .btn-primary:hover {
 }
 .india {
   background-position: 0 -3675px;
+}
+.vietnam {
+  background-position: 0 -176px;
 }
 
 /* Prevent auto-zooming on input fields in iOS making the page wider than can be displayed */

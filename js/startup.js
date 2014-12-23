@@ -172,7 +172,8 @@ var cookie = (function () {
       "esmx": true,
       "ptbr": true,
       "zhcn": true,
-      "hiin": true
+      "hiin": true,
+      "vivn": true
     };
 
   // console.log("langFolder:", langFolder, "\nlangCode:", langCode, "\nsavedLangCode:", savedLangCode, "\npage:", page);

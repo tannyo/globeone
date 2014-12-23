@@ -151,6 +151,30 @@
   <changefreq>weekly</changefreq>
 </url>
 <url>
+  <loc>http://www.globeone.com/vivn/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.globeone.com/vivn/who.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.globeone.com/vivn/how.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.globeone.com/vivn/employers.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.globeone.com/vivn/faqs.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.globeone.com/vivn/privacy.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
   <loc>http://www.globeone.com/pressroom.html</loc>
   <changefreq>weekly</changefreq>
 </url>
@@ -168,6 +192,14 @@
 </url>
 <url>
   <loc>http://www.globeone.com/press-releases/GlobeOne-Names-Philip-A-Valvardi-CFO-and-Head-of-Business-Development.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.globeone.com/press-releases/Stephen-Landry-COO-and-CTO.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.globeone.com/press-releases/Don-Bonker-Joins-GlobeOne-Advisory-Board.html</loc>
   <changefreq>weekly</changefreq>
 </url>
 </urlset>
