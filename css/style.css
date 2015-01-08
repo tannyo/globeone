@@ -494,10 +494,11 @@ section ol li:after {
 
 section .join-us-form {
   max-width: 320px;
+  text-align: center;
 }
 section .join-us-form input {
   font-weight: 400;
-  width: 61%;
+  width: 55%;
   display: inline-block;
 }
 section .join-us-form.esmx input {
@@ -515,6 +516,10 @@ section .join-us-form.ptbr input {
 section .join-us-form.idid, section .join-us-form.vivn {
   text-align: center;
 }
+/*
+ * The input field and button will not fit on a phone screen inline.
+ * Change the input field to be larger and push the button to the next line.
+ */
 section .join-us-form.idid input, section .join-us-form.vivn input {
   width: 75%;
   display: block;
@@ -525,12 +530,16 @@ section .join-us-form button, section .btn-primary {
   border-color: #1369b3;
 }
 @media (min-width: 768px) {
+  section .join-us-form input {
+    width: 65%;
+  }
   section .join-us-form {
     max-width: 500px;
   }
   #sec-intro .join-us-form {
     text-align: center;
   }
+  /* Set input field and button to display inline. */
   section .join-us-form.idid input, section .join-us-form.vivn input {
     width: 45.5%;
     display: inline;
