@@ -465,7 +465,8 @@ var contact_us = (function () {
       "data": {
         "email": email.email,
         "subject": email.subject,
-        "body": email.body
+        "body": email.body,
+        "lang": "enus"
       }
     };
 
@@ -672,7 +673,8 @@ var join_us = (function () {
       "data": {
         "email": email,
         "type": type,
-        "resend": resend
+        "resend": resend,
+        "lang": "enus"
       }
     };
 

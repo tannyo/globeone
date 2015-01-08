@@ -494,7 +494,6 @@ section ol li:after {
 
 section .join-us-form {
   max-width: 320px;
-  text-align: center;
 }
 section .join-us-form input {
   font-weight: 400;
@@ -513,7 +512,7 @@ section .join-us-form.hiin input {
 section .join-us-form.ptbr input {
   width: 54%;
 }
-section .join-us-form.idid, section .join-us-form.vivn {
+#sec-intro .join-us-form {
   text-align: center;
 }
 /*
@@ -531,13 +530,10 @@ section .join-us-form button, section .btn-primary {
 }
 @media (min-width: 768px) {
   section .join-us-form input {
-    width: 65%;
+    width: 60%;
   }
   section .join-us-form {
     max-width: 500px;
-  }
-  #sec-intro .join-us-form {
-    text-align: center;
   }
   /* Set input field and button to display inline. */
   section .join-us-form.idid input, section .join-us-form.vivn input {
