@@ -194,6 +194,9 @@ h3 {
 .win h1, .win h2, .win h3 {
   font-weight: 200;
 }
+.win.vivn h1, .win.vivn h2, .win.vivn h3 {
+  font-weight: normal;
+}
 
 .pat-pend {
   font-size:  14%;
@@ -472,6 +475,9 @@ section ol li:after {
 .win .sec-img {
   font-weight: 200;
 }
+.win.vivn section, .win.vivn .sec-img {
+  font-weight: normal;
+}
 .sec-img h1, .sec-img  h2 {
   text-shadow: 2px 2px 1px #000;
 }
@@ -484,7 +490,6 @@ section ol li:after {
 
 .sec-img strong {
   font-weight: 300;
-
 }
 
 section .join-us-form {
@@ -520,8 +525,11 @@ section .join-us-form button, section .btn-primary {
   border-color: #1369b3;
 }
 @media (min-width: 768px) {
-  section .join-us-form.idid, section .join-us-form.vivn {
+  section .join-us-form {
     max-width: 500px;
+  }
+  #sec-intro .join-us-form {
+    text-align: center;
   }
   section .join-us-form.idid input, section .join-us-form.vivn input {
     width: 45.5%;
@@ -715,6 +723,9 @@ section .btn-primary:hover {
 }
 #sec-compare th {
   font-weight: 200;
+}
+.win.vivn #sec-compare th {
+  font-weight: normal;
 }
 #sec-compare thead th {
   text-align: center;
@@ -929,7 +940,7 @@ section .btn-primary:hover {
   border-bottom: 1px solid #ccc;
 }
 /* The chinese and Hindi font we're using doesn't display bold. Use a slightly darker color emulate bold. */
-.zhcn #sec-who-principles strong, .hiin #sec-who-principles strong {
+.zhcn #sec-who-principles strong, .hiin #sec-who-principles strong, .vivn #sec-who-principles strong {
   color: #333;
   font-weight: bold;
 }
@@ -982,6 +993,9 @@ section .btn-primary:hover {
   display: none;
   font-weight: 200;
 }
+.win.vivn .faq-answer {
+  font-weight: normal;
+}
 @media  (min-width: 768px) {
   .faq h2 {
     font-size: 1em;
@@ -997,8 +1011,10 @@ section .btn-primary:hover {
 }
 
 .privacy-update {
-  /*float: right;*/
   text-align: right;
+}
+.win.vivn .privacy-update em {
+  font-style: normal;
 }
 
 .dialog {

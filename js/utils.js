@@ -904,6 +904,8 @@ $(document).ready(function () {
       $("body").addClass("zhcn");
     } else if (/\/hiin/.test(location.href)) {
       $("body").addClass("hiin");
+    } else if (/\/vivn/.test(location.href)) {
+      $("body").addClass("vivn");
     }
 
     // Disable language link for career or events pages.

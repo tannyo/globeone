@@ -34,6 +34,11 @@
   }
 
   function done(data) {
+    // Sort data by date ascending.
+    data.list.sort(function (a, b) {
+      return new Date(a.createDate.replace(/\-/g, "/")) - new Date(b.createDate.replace(/\-/g, "/"));
+    });
+
     // Massage data to a format that is ready for charting.
     var count_months = [],
       member_counts = [],
