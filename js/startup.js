@@ -282,7 +282,7 @@ function supportsSvg() {
     var i = 0,
       modernBrowser = supportsSvg(),
       scripts = [
-        {src: '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js', wait: true, add: modernBrowser},
+        {src: '//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js', wait: true, add: modernBrowser},
         {src: '/js/jquery-1.11.1.min.js', wait: true, add: !modernBrowser},
         {src: '/js/utils.js?201501071700', wait: false, add: true},
         {src: '/js/video.ga.js?201410081725', wait: false, add: document.getElementById("video-blocker")},
