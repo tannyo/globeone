@@ -278,61 +278,14 @@ function supportsSvg() {
 
 // Use an anonymous function to prevent start functions from being global.
 (function start() {
-  function loadScripts() {
-    var i = 0,
-      modernBrowser = supportsSvg(),
-      scripts = [
-        {src: '//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js', wait: true, add: modernBrowser},
-        {src: '/js/jquery-1.11.1.min.js', wait: true, add: !modernBrowser},
-      {src: '/js/utils.js?201501081350', wait: false, add: true},
-        {src: '/js/video.ga.js?201410081725', wait: false, add: document.getElementById("video-blocker")},
-        {src: '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js', wait: false, add: true},
-        {src: '/js/downloads.js?201412031612', wait: false, add: /^downloads/.test(document.body.className)}
-      ];
-
-    function addScript() {
-      var script;
-
-      if (i >= scripts.length) {
-        return;
-      }
-
-      // Should we skip this script?
-      if (!scripts[i].add) {
-        i++;
-        addScript();
-        return;
-      }
-
-      // Create a new script element.
-      script = document.createElement('script');
-
-      // Should we wait to load the next script after this script has loaded?
-      if (scripts[i].wait) {
-        script.onload = addScript;
-      }
-
-      // Add the script src.
-      script.src = scripts[i].src;
-
-      // Append the script to the body to allow multiple scripts to load at the same time.
-      document.body.appendChild(script);
-
-      console.log("loading: %c%s %c%s", "color:blue", script.src, "color:darkred", (scripts[i].wait ? "synchronous" : "asynchronous"));
-
-      // Should we load the next script now?
-      if (!scripts[i].wait) {
-        i++;
-        addScript();
-        return;
-      }
-
-      i++;
-    }
-
-    // Start loading scripts.
-    addScript();
-  }
+  function loadScripts(){var c=0,modernBrowser=supportsSvg(),a=[
+{src: '//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js', wait: true, add: modernBrowser},
+{src: '/js/jquery-1.11.1.min.js', wait: true, add: !modernBrowser},
+{src: '/js/utils.js?201501081350', wait: false, add: true},
+{src: '/js/video.ga.js?201410081725', wait: false, add: document.getElementById("video-blocker")},
+{src: '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js', wait: false, add: true},
+{src: '/js/downloads.js?201412031612', wait: false, add: /^downloads/.test(document.body.className)}
+];function b(){var e;function d(){c++;b()}if(c>=a.length){return}if(!a[c].add){c++;b();return}e=document.createElement("script");if(a[c].wait){e.onload=d;if(window.attachEvent&&!window.addEventListener){e.onreadystatechange=function(){if(e.readyState==="complete"){document.body.appendChild(e);e.onreadystatechange=null;d();return}var f=e.readyState;try{e.children}catch(g){}if(f==="loaded"&&e.readyState==="loading"){e.onreadystatechange=null}}}else{document.body.appendChild(e)}e.src=a[c].src}else{e.src=a[c].src;document.body.appendChild(e)}console.log("loading: %c%s %c%s","color:blue",e.src,"color:darkred",(a[c].wait?"synchronous":"asynchronous"));if(a[c].wait){return}c++;b()}b()};
 
   // If we are not local, load scripts and exit.
   if (!/local/.test(location.hostname.toLowerCase())) {
