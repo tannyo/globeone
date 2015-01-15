@@ -1,6 +1,7 @@
 (function () {
   'use strict';
-  var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+  var data = {},
+    months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     goals = {
       facebook: {title: "Facebook Friends", counts: [1350, 2500, 3500, 10000]},
       twitter: {title: "Twitter Followers", counts: [85, 250, 500, 10000]},
@@ -12,7 +13,7 @@
       facebook: [0,0,0,0],
       twitter: [0,0,0,0],
       signups: [0,0,0,0],
-      visits: [865,0,0,0],
+      visits: [888,0,0,0],
       countries: [92,0,0,0]
     },
     // first month offset.
@@ -160,16 +161,20 @@
     $("#last-refresh").find("span").text((new Date()).toLocaleString());
   }
 
-  function done(data) {
+  function set_data() {
+    if (!(data.signups && data.twitter && data.facebook)) {
+      return;
+    }
+
     // Sort data by date ascending.
-    data.list.sort(function (a, b) {
+    data.signups.list.sort(function (a, b) {
       return new Date(a.createDate.replace(/\-/g, "/")) - new Date(b.createDate.replace(/\-/g, "/"));
     });
 
     // Massage data to a format that is ready for charting.
     var count_months = [],
       counts = [],
-      list = data.list,
+      list = data.signups.list,
       now = new Date(),
       start_year = now.getFullYear(),
       start_date = new Date("1/1/" + start_year),
@@ -252,6 +257,11 @@
   }
 
   function get_data() {
+    function done(req) {
+      data.signups = req;
+      set_data();
+    }
+
     if (/local/.test(location.hostname.toLowerCase())) {
       $.ajax({
         type: "GET",
@@ -272,7 +282,51 @@
     }).done(done).error(error);
   }
 
+  function get_facebook_data() {
+    function done(req) {
+      var m = new Date().getMonth();
+
+      if (m >= 0 && m < 4) {
+        actuals.facebook[m] = req.likes;
+      }
+
+      data.facebook = true;
+      set_data();
+    }
+
+    // https://graph.facebook.com/GlobeOneCom
+    jsonp("//graph.facebook.com/GlobeOneCom").done(done);
+  }
+
+  function get_twitter_data() {
+    function done(req) {
+      var last_month = -1, dates = req.followersperdate, key, month;
+
+      // Get the last day of the month's followers count.
+      // key is in dateYYYY-MM-DD format. key contains the cumalative number of
+      // followers as of that day.
+      // keys are in descending order.
+      for (key in dates) {
+        if (dates.hasOwnProperty(key)) {
+          month = parseInt(key.substr(9, 2), 10);
+          if (month !== last_month && month > 0 && month < 5) {
+            last_month = month;
+            actuals.twitter[month - 1] = dates[key];
+          }
+        }
+      }
+
+      data.twitter = true;
+      set_data();
+    }
+
+    // http://api.twittercounter.com/?apikey=41f01c02e41893ebfa51d8ff3aa5e54e&twitter_id=2399318976
+    jsonp("//api.twittercounter.com/?apikey=41f01c02e41893ebfa51d8ff3aa5e54e&twitter_id=2399318976&output=JSONP").done(done);
+  }
+
   get_data();
+  get_facebook_data();
+  get_twitter_data();
   $("#refresh-btn").on("click", function (event) {
     event.preventDefault();
     location.reload();
