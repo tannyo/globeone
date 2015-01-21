@@ -1,7 +1,13 @@
 (function () {
   'use strict';
   var data = {},
-    months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    actuals = {
+      facebook: [1335,0,0,0],
+      twitter: [86,0,0,0],
+      signups: [190,0,0,0],
+      visits: [10332,0,0,0],
+      countries: [94,0,0,0]
+    },
     goals = {
       facebook: {title: "Facebook Friends", counts: [1350, 2500, 3500, 10000]},
       twitter: {title: "Twitter Followers", counts: [85, 250, 500, 10000]},
@@ -9,19 +15,13 @@
       visits: {title: "Site Visits", counts: [900, 2500, 5000, 50000]},
       countries: {title: "Countries", counts: [45, 65, 100, 110]}
     },
-    actuals = {
-      facebook: [0,0,0,0],
-      twitter: [0,0,0,0],
-      signups: [0,0,0,0],
-      visits: [888,0,0,0],
-      countries: [92,0,0,0]
-    },
     // first month offset.
     offset = {
       signups: 176,
-      visits: 8942,
+      visits: 0,
       countries: 0
-    };
+    },
+    months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
   Chart.defaults.global.responsive = true;
 
@@ -31,14 +31,6 @@
       s += a[i];
     }
     return s;
-  }
-
-  function zero_future(obj, end_month) {
-    var i;
-
-    for (i = end_month; i < obj.counts.length; i++) {
-      obj.counts[i] = 0;
-    }
   }
 
   function setTable(end_month) {
@@ -101,64 +93,6 @@
       goal: [goals[id].counts[i]],
       show_legend: show_legend
     });
-    return;
-
-    zero_future(goals[id], end_month);
-    var ctx = document.getElementById(id + "-chart").getContext("2d"),
-      data = {
-        labels: labels,
-        datasets: [
-          {
-            label: "Actual",
-            fillColor: "rgba(120,191,224,1)",
-            data: actuals[id]
-          },
-          {
-            label: "Goal",
-            fillColor: "rgba(2,108,194,1)",
-            data: goals[id].counts
-          }
-        ]
-      },
-      combined;
-
-    ctx.canvas.setAttribute("width", ctx.canvas.offsetWidth)
-    combined = new Chart(ctx).Bar(data, {responsive: true});
-    if (show_legend) {
-      $("#" + id + "-chart").after(combined.generateLegend());
-    }
-    // $("#" + id + " .bar-legend")
-    //   .find("li:first").append(" (" + intlfmts.get(sum(actuals[id]), 0) + ")").end()
-    //   .find("li:last").append(" (" + intlfmts.get(sum(goals[id].counts), 0) + ")");
-  }
-
-  function chart_signups(req) {
-    var ctx = document.getElementById("signups-chart").getContext("2d"),
-      data = {
-        labels: req.labels,
-        datasets: [
-          {
-            label: "Actual",
-            fillColor: "rgba(120,191,224,1)",
-            data: req.counts
-          },
-          {
-            label: "Goal",
-            fillColor: "rgba(2,108,194,1)",
-            data: req.goals
-          }
-        ]
-      },
-      combined;
-
-    ctx.canvas.setAttribute("width", ctx.canvas.offsetWidth)
-    combined = new Chart(ctx).Bar(data, {responsive: true});
-    $("#signups-chart").after(combined.generateLegend());
-    $("#signups-chart .bar-legend")
-      .find("li:first").append(" (" + req.counts_total + ")").end()
-      .find("li:last").append(" (" + sum(req.goals) + ")");
-
-    $("#last-refresh").find("span").text((new Date()).toLocaleString());
   }
 
   function set_data() {
@@ -233,19 +167,16 @@
     setTable(end_month);
 
     // zero out future months for chart.
-    for (i = end_month; i < goals.signups.counts.length; i++) {
-      goals.signups.counts[i] = 0;
+    // for (i = end_month; i < goals.signups.counts.length; i++) {
+    //   goals.signups.counts[i] = 0;
+    // }
+    for (i = end_month; i < actuals.signups.length; i++) {
+      actuals.signups[i] += actuals.signups[i-1];
     }
 
     chart_item("facebook", count_months, end_month, true);
     chart_item("twitter", count_months, end_month);
     chart_item("signups", count_months, end_month);
-    // chart_signups({
-    //   labels: count_months,
-    //   counts: counts,
-    //   counts_total: counts_total,
-    //   goals: goals.signups.counts
-    // });
     chart_item("visits", count_months, end_month);
     chart_item("countries", count_months, end_month);
     $("#last-refresh").find("span").text((new Date()).toLocaleString());
@@ -256,7 +187,7 @@
     // $.dialog.alert(lang.joinUs.errorMsg).autoClose(7000);
   }
 
-  function get_data() {
+  function get_signups_data() {
     function done(req) {
       data.signups = req;
       set_data();
@@ -294,7 +225,6 @@
       set_data();
     }
 
-    // https://graph.facebook.com/GlobeOneCom
     jsonp("//graph.facebook.com/GlobeOneCom").done(done);
   }
 
@@ -320,13 +250,13 @@
       set_data();
     }
 
-    // http://api.twittercounter.com/?apikey=41f01c02e41893ebfa51d8ff3aa5e54e&twitter_id=2399318976
     jsonp("//api.twittercounter.com/?apikey=41f01c02e41893ebfa51d8ff3aa5e54e&twitter_id=2399318976&output=JSONP").done(done);
   }
 
-  get_data();
+  get_signups_data();
   get_facebook_data();
   get_twitter_data();
+
   $("#refresh-btn").on("click", function (event) {
     event.preventDefault();
     location.reload();

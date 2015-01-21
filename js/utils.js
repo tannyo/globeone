@@ -7,7 +7,7 @@ var lang = {
 
   "joinUs": {
     "emailReq": "Please enter your email address.",
-    "successMsg": "Thank you for your request to Join the GlobeOne\ncommunity. We will get back to you soon.",
+    "successMsg": "Thank you for requesting an invitation to the GlobeOne\ncommunity. We will get back to you soon.",
     "errorMsg": "We're sorry, we were not able to process\nyour request. Please try again later.",
     "duplicateMsg": "The email address has already been used,\ndo you want us to resend the Join Us email?",
     "duplicateOK": "Yes",
