@@ -288,7 +288,7 @@ function supportsSvg() {
 ];function b(){var e;function d(){c++;b()}if(c>=a.length){return}if(!a[c].add){c++;b();return}e=document.createElement("script");if(a[c].wait){e.onload=d;if(window.attachEvent&&!window.addEventListener){e.onreadystatechange=function(){if(e.readyState==="complete"){document.body.appendChild(e);e.onreadystatechange=null;d();return}var f=e.readyState;try{e.children}catch(g){}if(f==="loaded"&&e.readyState==="loading"){e.onreadystatechange=null}}}else{document.body.appendChild(e)}e.src=a[c].src}else{e.src=a[c].src;document.body.appendChild(e)}console.log("loading: %c%s %c%s","color:blue",e.src,"color:darkred",(a[c].wait?"synchronous":"asynchronous"));if(a[c].wait){return}c++;b()}b()};
 
   // If we are not local, load scripts and exit.
-  if (!/local/.test(location.hostname.toLowerCase())) {
+  if (!/local|github/.test(location.hostname.toLowerCase())) {
     loadScripts();
     return;
   }
