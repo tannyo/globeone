@@ -9,4 +9,4 @@ My personal repository of the GlobeOne website to make sure that everything is b
 ## Requirements
 This site is designed to run on an Apache server as it uses server side includes and in the footer.html file the year.
 
-To facilitate 
+To facilitate debugging with a non-Apache server the startup.js file includes code to emulate server side includes using ajax calls. 
