@@ -62,5 +62,5 @@ Form element font size was set to 16px to prevent auto zoom of input elements on
 
 ## Legal 
 
-At the time this site was public some content was undergoing legal review and certain items had to be changed. When we got a new COO, he decided that we were not going to do any in house programming so while the site was up for many months, changes for legal purposes were never made. Since they got rid of all their internal programmers they no longer had staff to change the website. I believe this is the reason the marketing department changed to a WordPress site with far fewer features.
+At the time this site was public some content was undergoing legal review and certain items had to be changed. When we got a new COO, he decided that we were not going to do any in house programming so while the site was up for many months, changes for legal purposes were never made. Since they got rid of all their internal programmers they no longer had staff to change the website. I believe this is the reason the marketing department changed to a WordPress site with far fewer features and much slower performance. I also noticed that the language menu disappears after displaying on mobile devices.
 
