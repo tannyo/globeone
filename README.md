@@ -21,7 +21,7 @@ The site uses bootstrap and custom CSS to make it responsive.
 
 With the exception of javascript files every file is cached and all files that can be use gzip compression.
 
-Picture I mages are saved as small as possible and use the progressive flag so the image appears slightly blurry then sharpens as it loads instead of painting top to bottom.
+Picture images are saved as small as possible and use the progressive flag so the image appears slightly blurry then sharpens as it loads instead of painting top to bottom.
 
 Icons default to SVG images and fallback to PNG for browsers that don't support SVG.
 
@@ -39,7 +39,7 @@ Language is automatically detected and the page is directed to their language ch
 
 I worked very hard with the director of marketing, Michael Wolper to reduce the size of content, speak directly, and to delete marketing speak.
 
-I made use of a sitemap.xml file and the her flange link attribute.
+I made use of a sitemap.xml file and the herflang link attribute.
 
 For a small bump in SEO we used https to display the website.
 
@@ -51,6 +51,14 @@ Good content is always the best SEO.
 Each page reports to Google Analytics.
 
 The video state as to whether a user clicked, stopped, skipped, or finished viewing the video was tracked to Google Analytics.
+
+## Design Considerations
+
+We made use of large font sizes to make the content easier to read.
+
+Content was carefully aligned with images for proper art direction on any width screen.
+
+Form element font size was set to 16px to prevent auto zoom of input elements on mobile devices, giving maximum readability.
 
 ## Legal 
 
