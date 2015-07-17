@@ -9,7 +9,7 @@ My personal repository of the GlobeOne website to make sure that everything is b
 ## Requirements
 This site is designed to run on an Apache server as it uses server side includes and in the footer.html file calculates the copyright year.
 
-To facilitate debugging with a non-Apache server like [http-server](https://github.com/indexzero/http-server), the startup.js file includes code to emulate server side includes using ajax calls. 
+To facilitate debugging with a non-Apache server like [http-server](https://github.com/indexzero/http-server), the startup.js file includes code to emulate server side includes using ajax calls which is never intended to run on a production site.
 
 ## Performance
 
