@@ -64,3 +64,25 @@ Form element font size was set to 16px to prevent auto zoom of input elements on
 
 At the time this site was public some content was undergoing legal review and certain items had to be changed. When we got a new COO, he decided that we were not going to do any in house programming so while the site was up for many months, changes for legal purposes were never made. Since they got rid of all their internal programmers they no longer had staff to change the website. I believe this is the reason the marketing department changed to a WordPress site with far fewer features and much slower performance. I also noticed that the language menu disappears after displaying on mobile devices.
 
+## Screen Shots
+### Why We Care
+![Home Page](./screenshots/Home.jpg "Home Page")
+
+### Who We Are
+![Who](./screenshots/Our-Vision.jpg "Who We Are")
+
+### How this Works
+![How](./screenshots/How-this-works.jpg "How this Works")
+
+### Employers
+![Employers](./screenshots/Employers.jpg "Employers")
+
+### Press Room
+![Press Room](./screenshots/Press-Room.jpg "Press Room")
+
+### Language Dropdown
+![Language Dropdown](./screenshots/Language-Dropdown.jpg "Language Dropdown")
+
+### Contact Us Dialog
+![Contact Us](./screenshots/ContactUs.jpg "Contact Us")
+
